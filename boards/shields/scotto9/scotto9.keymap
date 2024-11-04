@@ -11,9 +11,9 @@
             // |     A     |     B     |     C     |
             // |     D     |     E     |     F     |
             bindings = <
-                &kp Z    &kp M    &kp K
-                &kp A    &kp B    &kp C
-                &kp D    &kp E    &kp F
+                &kp LC(0)           &kp LC(MINUS)   &kp LC(EQUAL)
+                &kp LS(LA(LEFT))    &none           &kp LS(LA(RIGHT))
+                &none               &none           &copy_and_commend
             >;
         };
     };
@@ -26,4 +26,18 @@
             bindings = <&bootloader>;
         };
     };
- };
+
+    macros {
+        copy_and_commend: copy_and_commend {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LC(C)>
+                , <&kp LC(V)>
+                , <&kp UP>
+                , <&kp LC(SLASH)>
+                , <&kp DOWN>
+                ;
+        };
+    };
+};
