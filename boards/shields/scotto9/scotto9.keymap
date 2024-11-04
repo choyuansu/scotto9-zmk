@@ -13,7 +13,7 @@
             bindings = <
                 &kp LC(0)           &kp LC(MINUS)   &kp LC(EQUAL)
                 &kp LS(LA(LEFT))    &open_apps      &kp LS(LA(RIGHT))
-                &kp LG(L)           &split_view     &copy_and_commend
+                &kp LG(L)           &split_view     &copy_and_comment
             >;
         };
     };
