@@ -6,12 +6,8 @@
         compatible = "zmk,keymap";
 
         default_layer { // Layer 0
-            // -------------------------------------
-            // |     Z     |     M     |     K     |
-            // |     A     |     B     |     C     |
-            // |     D     |     E     |     F     |
             bindings = <
-                &kp LC(0)           &kp LC(MINUS)   &kp LC(EQUAL)
+                &kp LC(N0)          &kp LC(MINUS)   &kp LC(EQUAL)
                 &kp LS(LA(LEFT))    &open_apps      &kp LS(LA(RIGHT))
                 &kp LG(L)           &split_view     &copy_and_comment
             >;
@@ -57,7 +53,9 @@
             #binding-cells = <0>;
             bindings
                 = <&kp LG(LEFT)>
+                , <&macro_wait_time 100>
                 , <&kp LA(TAB)>
+                , <&macro_wait_time 100>
                 , <&kp LG(RIGHT)>
                 ;
         };
