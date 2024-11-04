@@ -7,9 +7,5 @@
 #
 board: ["nice_nano_v2"]
 shield: ["scotto9"]
-include:
-  - board: nice_nano_v2
-    shield: scotto9
-
 ---
 
