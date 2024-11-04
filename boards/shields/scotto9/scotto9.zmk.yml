@@ -1,0 +1,8 @@
+file_format: "1"
+id: scotto9
+name: Scotto9
+type: shield
+url: "https://github.com/joe-scotto/scottokeebs/tree/main/Scotto9"
+requires: [pro_micro]
+features:
+  - keys
