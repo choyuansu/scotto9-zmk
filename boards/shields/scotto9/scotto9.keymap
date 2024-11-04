@@ -12,8 +12,8 @@
             // |     D     |     E     |     F     |
             bindings = <
                 &kp LC(0)           &kp LC(MINUS)   &kp LC(EQUAL)
-                &kp LS(LA(LEFT))    &none           &kp LS(LA(RIGHT))
-                &none               &none           &copy_and_commend
+                &kp LS(LA(LEFT))    &open_apps      &kp LS(LA(RIGHT))
+                &LG(L)              &split_view     &copy_and_commend
             >;
         };
     };
@@ -28,7 +28,7 @@
     };
 
     macros {
-        copy_and_commend: copy_and_commend {
+        copy_and_comment: copy_and_comment {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -37,6 +37,28 @@
                 , <&kp UP>
                 , <&kp LC(SLASH)>
                 , <&kp DOWN>
+                , <&kp END>
+                ;
+        };
+
+        open_apps: open_apps {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LG(N1)>
+                = <&kp LG(N4)>
+                = <&kp LG(N5)>
+                ;
+        };
+
+
+        split_view: split_view {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&kp LG(LEFT)>
+                , <&kp LA(TAB)>
+                , <&kp LG(RIGHT)>
                 ;
         };
     };
