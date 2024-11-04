@@ -46,8 +46,8 @@
             #binding-cells = <0>;
             bindings
                 = <&kp LG(N1)>
-                = <&kp LG(N4)>
-                = <&kp LG(N5)>
+                , <&kp LG(N4)>
+                , <&kp LG(N5)>
                 ;
         };
 
