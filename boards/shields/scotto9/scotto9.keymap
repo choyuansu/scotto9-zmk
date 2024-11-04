@@ -16,10 +16,20 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_bootloader {
             timeout-ms = <50>;
             key-positions = <0 4 2>;
             bindings = <&bootloader>;
+        };
+        combo_screenshot {
+            timeout-ms = <50>;
+            key-positions = <0 1 2>;
+            bindings = <&kp LS(PSCRN)>;
+        };
+        combo_window_screenshot {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp LA(PSCRN)>;
         };
     };
 
